@@ -164,7 +164,11 @@ def main():
     device = torch.device(device)
     datapath = 'dataset/'+args.dataset+'.mat'
 
-    x,edge_index,y,train_mask,valid_mask,test_mask = Amazon_Dataloader(datapath)
+    if args.dataset in ['Amazon']:
+        x,edge_index,y,train_mask,valid_mask,test_mask = Amazon_Dataloader(datapath)
+    if args.dataset in ['YelpChi']:
+        x,edge_index,y,train_mask,valid_mask,test_mask = YelpChi_Dataloader(datapath)
+
     #x,edge_index,y,train_mask,valid_mask,test_mask = res[0],res[1],res[2],res[3],res[4],res[5]
 
     data = Graph(x=x, edge_index=edge_index, y=y, train_mask=train_mask, val_mask=valid_mask, test_mask=test_mask)
