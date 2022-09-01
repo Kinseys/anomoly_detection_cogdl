@@ -60,7 +60,7 @@ python gnn.py --model sagn --dataset YelpChi --epochs 100 --runs 10 --device 0
 
 
 ## Results:
-Performance on **YelpChi**(10 runs):
+Performance on **YelpChi & Amazon**(10 runs):
 
 |   | YelpChi(40% Training)  |   |   |    | Amazon(40% Training)  |   |
 |  :----  |  ---- |  ---- |  ----|  :----  |  ---- |  ---- |
