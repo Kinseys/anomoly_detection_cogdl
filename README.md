@@ -10,7 +10,8 @@ Implementing environment:
 - pillow = 9.1.1
 - cogdl = 0.5.3
 
-## Training(Before training you should unzip YelpChi.zip & Amazon.zip under ./dataset/)
+## Training
+(Before training you should unzip YelpChi.zip & Amazon.zip under ./dataset/)
 
 - **MLP**
 ```bash
