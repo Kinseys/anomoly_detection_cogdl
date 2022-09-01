@@ -10,7 +10,7 @@ Implementing environment:
 - pillow = 9.1.1
 - cogdl = 0.5.3
 
-## Training
+## Training(Before training you should unzip YelpChi.zip & Amazon.zip under ./dataset/)
 
 - **MLP**
 ```bash
@@ -22,7 +22,7 @@ python gnn.py --model mlp --dataset YelpChi --epochs 100 --runs 10 --device 0
 
 - **GCN**
 ```bash
-python gnn.py --model gcn --dataset Amazon --epochs 100 --runs 10 --device 0
+python gnn.py --model gcn --dataset YelpChi --epochs 100 --runs 10 --device 0
 ```
 
 - **GraphSAGE**
@@ -57,9 +57,6 @@ python gnn.py --model sign --dataset YelpChi --epochs 100 --runs 10 --device 0
 
 - **SAGN**
 ```bash
-python gnn.py --model sagn --dataset Amazon --epochs 100 --runs 10 --device 0
-```
-```bash
 python gnn.py --model sagn --dataset YelpChi --epochs 100 --runs 10 --device 0
 ```
 
@@ -67,11 +64,12 @@ python gnn.py --model sagn --dataset YelpChi --epochs 100 --runs 10 --device 0
 
 
 ## Results:
-Performance on **icdm**(10 runs):
-
-| Methods   | Train Precision  | Valid Precision  |
-|  :----  |  ---- |  ---- |
+Performance on **YelpChi**(10 runs):
+|  :----  |  ---- |  ---- | ----|  :----  |  ---- |  ---- |
+| Methods   | Test MacroF1  | Test AUC  |  ---- | Methods   | Test MacroF1  | Test AUC  |
+|  :----  |  ---- |  ---- |  ----|  :----  |  ---- |  ---- |
 | SIGN | 0.9421 ± 0.0031 | 0.9213 ± 0.0042 |
+| SAGN | 0.9421 ± 0.0031 | 0.9213 ± 0.0042 |
 | GIN | 0.8965 ± 0.0257 | 0.8983 ± 0.0320 |
 | GraphSAGE| 0.9213 ± 0.0022 | 0.8986 ± 0.0021 |
 | GCN | 0.9374 ± 0.0011 | 0.8629 ± 0.0047 |
