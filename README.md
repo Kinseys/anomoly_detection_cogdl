@@ -65,8 +65,8 @@ python gnn.py --model sagn --dataset YelpChi --epochs 100 --runs 10 --device 0
 
 ## Results:
 Performance on **YelpChi**(10 runs):
-|  :----  |  ---- |  ---- | ----|  :----  |  ---- |  ---- |
-| Methods   | Test MacroF1  | Test AUC  |  ---- | Methods   | Test MacroF1  | Test AUC  |
+|   | YelpChi  |   |   |    | Amazon  |   |
+| Methods   | Test MacroF1  | Test AUC  |   | Methods   | Test MacroF1  | Test AUC  |
 |  :----  |  ---- |  ---- |  ----|  :----  |  ---- |  ---- |
 | SIGN | 0.9421 ± 0.0031 | 0.9213 ± 0.0042 |
 | SAGN | 0.9421 ± 0.0031 | 0.9213 ± 0.0042 |
