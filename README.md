@@ -62,7 +62,7 @@ python gnn.py --model sagn --dataset YelpChi --epochs 100 --runs 10 --device 0
 ## Results:
 Performance on **YelpChi&Amazon**(10 runs):
 
-|   | YelpChi(40% Training)  |   |   |    | Amazon(40% Training)  |   |
+|   | YelpChi (40% Training)  |   |   |    | Amazon (40% Training)  |   |
 |  :----  |  ---- |  ---- |  ----|  :----  |  ---- |  ---- |
 | Methods   | Test MacroF1  | Test AUC  |   |  Methods | Test MacroF1  | Test AUC  |
 |    |    |   |   |    |  |   |
